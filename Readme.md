@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Anastassia Russak](https://up.htmlacademy.ru/htmlcss/25/user/964269).
-* Наставник: `Неизвестно`.
+* Наставник: [Денис Байдаров](https://htmlacademy.ru/profile/4er).
 
 ---
 
