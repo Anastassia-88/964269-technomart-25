@@ -64,8 +64,17 @@
     <h2>Перфораторы</h2>
 
     <section class="filters">
-        <h3 class="visually-hidden">Filters</h3>
-        <section class="manufacturers">
+        <h3 class="filters-title">Filter</h3>
+        <section class="filters-price">
+            <h4>Price</h4>
+            // место под ползунок
+            <p class="filters-price-range">
+                <span class="filters-price-min">0</span>
+                <span>-</span>
+                <span class="filters-price-max">30 000</span>
+            </p>
+        </section>
+        <section class="filters-manufacturers">
             <h4>Manufacturers</h4>
             <ul>
                 <li>Bosch</li>
@@ -75,7 +84,7 @@
                 <li>Hitachi</li>
             </ul>
         </section>
-        <section class="power-supply">
+        <section class="filters-power-supply">
             <h4>Power supply</h4>
             <ul>
                 <li>Аккумуляторные</li>
@@ -83,6 +92,15 @@
             </ul>
         </section>
         <a href="#">Show</a>
+    </section>
+
+    <section class="sort-by">
+        <h3 class="sort-by-title">Sort by:</h3>
+        <ul class="sort-by-list">
+            <li class="sort-by-item sort-by-item-current">Price</li>
+            <li class="sort-by-item">Type</li>
+            <li class="sort-by-item">Functions</li>
+        </ul>
     </section>
 
     <section class="catalog">
@@ -277,8 +295,25 @@
                 </article>
             </li>
         </ul>
+
+        <ul class="pagination-list">
+            <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+            <li class="pagination-item"><a href="#">2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item"><a href="#">Next</a></li>
+        </ul>
     </section>
 
+    <article class="reference">
+        <h3 class="reference-title">Пара слов о перфораторах</h3>
+        <p>
+            Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
+            кирпиче, бетоне и камне.<br>
+            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции
+            дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном
+            устройстве будут совмещены отбойный молоток и ударная дрель.
+        </p>
+    </article>
 </main>
 
 <footer class="footer">
