@@ -10,7 +10,12 @@
   <header class="header">
     <div class="header-top">
       <a href="#" class="header-top-logo"><img src="img/logo.svg" alt="logo"></a>
-      <a href="#" class="header-top-search">Поиск:</a>
+      <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
+        <p>
+          <label for="search">Поиск:</label>
+            <input id="search" type="search" name="search">
+        </p>
+      </form>
       <a href="#" class="header-top-favourite">Закладки: 0</a>
       <a href="#" class="header-top-basket">Корзина: 0</a>
       <a href="#" class="header-top-order">Оформить заказ</a>
@@ -27,8 +32,8 @@
     </section>
     <section class="header-user-navigation">
       <h2 class="visually-hidden">Пользовательская навигация</h2>
-      <a class="header-user-navigation-button login-link-button">Войти</a>
-      <a class="header-user-navigation-button sign-up-link-button">Регистрация</a>
+      <a class="header-user-navigation-button login-link-button" href="#">Войти</a>
+      <a class="header-user-navigation-button sign-up-link-button" href="#">Регистрация</a>
     </section>
     <nav class="main-navigation">
       <ul class="site-navigation">
@@ -319,27 +324,32 @@
     <section class="contacts">
       <h2>Контакты</h2>
       <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-      <img src="img/map.jpg" width="300" height="158" alt="map">
+      <a href="map.html">
+        <img src="img/map.jpg" width="300" height="158"
+             alt="Офис компании по адресу улица Большая Конюшенная 19/8, Санкт-Петербург">
+      </a>
       <a class="main-button contacts-button" href="#">Заблудились? Напишите нам!</a>
     </section>
   </main>
 
   <footer class="footer">
-    <a href="#" class="footer-logo"><img src="img/logo.svg" alt="logo"></a>
+    <a href="#" class="footer-logo">
+      <img src="img/logo.svg" alt="logo">
+    </a>
     <p class="footer-address">
       г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
       +7 (812) 555-05-55
     </p>
     <ul class="footer-navigation">
-      <li><a href="">Компания</a></li>
-      <li><a href="">Новости</a></li>
-      <li><a href="">Каталог</a></li>
-      <li><a href="">Доставка</a></li>
-      <li><a href="">Контакты</a></li>
-      <li><a href="">Материалы</a></li>
-      <li><a href="">Техника</a></li>
-      <li><a href="">Инструмент</a></li>
-      <li><a href="">Спецпредложения</a></li>
+      <li><a href="#">Компания</a></li>
+      <li><a href="#">Новости</a></li>
+      <li><a href="catalog.html">Каталог</a></li>
+      <li><a href="#">Доставка</a></li>
+      <li><a href="#">Контакты</a></li>
+      <li><a href="#">Материалы</a></li>
+      <li><a href="#">Техника</a></li>
+      <li><a href="#">Инструмент</a></li>
+      <li><a href="#">Спецпредложения</a></li>
     </ul>
     <div class="footer-bottom">
       <p class="footer-bottom-copyright">
@@ -367,5 +377,29 @@
       </p>
     </div>
   </footer>
+
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <img src="img/map.jpg" width="300" height="158"
+         alt="Офис компании по адресу улица Большая Конюшенная 19/8, Санкт-Петербург">
+  </section>
+
+  <section class="modal modal-feedback">
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">
+      <p>
+        <label for="name">Ваше имя:</label>
+        <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+        <label for="email">Ваш e-mail:</label>
+        <input id="email" type="text" name="email" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="feedback-text">Текст письма:</label>
+        <textarea id="feedback-text" name="feedback-text" placeholder="В свободной форме"></textarea>
+      </p>
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+
   </body>
 </html>
