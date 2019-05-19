@@ -73,32 +73,57 @@
 
         <section class="filters">
             <h3 class="filters-title">Фильтр:</h3>
-            <section class="filter-item">
-                <h4 class="filter-item-title">Цена:</h4>
-                <p class="filters-price-range">
-                    <span class="filters-price-min">0</span>
-                    <span class="filters-price-between">-</span>
-                    <span class="filters-price-max">30 000</span>
-                </p>
-            </section>
-            <section class="filter-item">
-                <h4 class="filter-item-title">Производители:</h4>
-                <ul>
-                    <li>Bosch</li>
-                    <li>Интерскол</li>
-                    <li>Makita</li>
-                    <li>Dewalt</li>
-                    <li>Hitachi</li>
-                </ul>
-            </section>
-            <section class="filter-item">
-                <h4 class="filter-item-title">Питание:</h4>
-                <ul>
-                    <li>Аккумуляторные</li>
-                    <li>Сетевые</li>
-                </ul>
-            </section>
-            <a href="#">Показать</a>
+            <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
+                <fieldset class="filter-item">
+                    <legend class="filter-item-title">Цена:</legend>
+                    <input type="range" min="0" max="30000" step="500" value="25000">
+                    <p class="filters-price-range">
+                        <input class="filters-price filters-price-min" type="number" name="filters-price-min" placeholder="0">
+                        <span class="filters-price-between">-</span>
+                        <input class="filters-price filters-price-max" type="number" name="filters-price-max" placeholder="30000">
+                    </p>
+                </fieldset>
+
+                <fieldset class="filter-item">
+                    <legend class="filter-item-title">Производители:</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" id="bosch" type="checkbox" name="bosch" checked>
+                            <label for="bosch">Bosch</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" id="interskol" type="checkbox" name="interskol">
+                            <label for="interskol">Интерскол</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" id="makita" type="checkbox" name="makita" checked>
+                            <label for="makita">Makita</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" id="dewalt" type="checkbox" name="dewalt">
+                            <label for="dewalt">Dewalt</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" id="hitachi" type="checkbox" name="hitachi">
+                            <label for="hitachi">Hitachi</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="filter-item">
+                    <legend class="filter-item-title">Питание:</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-radio" id="battery" type="radio" checked>
+                            <label for="battery">Аккумуляторные</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-radio" id="network" type="radio">
+                            <label for="network">Сетевые</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button type="submit" class="filter-form-submit-button">Показать</button>
+            </form>
         </section>
 
         <section class="sort-by">
