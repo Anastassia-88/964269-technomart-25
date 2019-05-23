@@ -3,6 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>Technomart</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -86,7 +88,7 @@
 
                 <fieldset class="filter-item">
                     <legend class="filter-item-title">Производители:</legend>
-                    <ul>
+                    <ul class="filter-options-list">
                         <li class="filter-option">
                             <input class="visually-hidden filter-input filter-input-checkbox" id="bosch" type="checkbox" name="bosch" checked>
                             <label for="bosch">Bosch</label>
@@ -111,7 +113,7 @@
                 </fieldset>
                 <fieldset class="filter-item">
                     <legend class="filter-item-title">Питание:</legend>
-                    <ul>
+                    <ul class="filter-options-list">
                         <li class="filter-option">
                             <input class="visually-hidden filter-input filter-input-radio" id="battery" type="radio" name="power-supply" value="battery" checked>
                             <label for="battery">Аккумуляторные</label>
@@ -373,10 +375,10 @@
 
     <footer class="footer">
         <a href="index.html" class="footer-logo"><img src="img/logo.svg" alt="logo"></a>
-        <p class="footer-address">
+        <address class="footer-contacts">
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
             +7 (812) 555-05-55
-        </p>
+        </address>
         <ul class="footer-navigation">
             <li><a href="#">Компания</a></li>
             <li><a href="#">Новости</a></li>
