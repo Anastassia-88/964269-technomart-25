@@ -13,6 +13,24 @@ a {
     text-decoration: none;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .site-navigation,
 .promo-small-items-list,
 .bestsellers-list,
@@ -29,8 +47,44 @@ a {
     list-style: none;
 }
 
+.header-top a,
+.footer-navigation a,
+.footer-bottom-social a {
+    color: #ffffff;
+}
+
+.site-navigation a,
+.header-user-navigation a,
+.promo-big-item a,
+.promo-small-item a,
+.popular a,
+.services a,
+.company-info a,
+.contacts a {
+    color: #000000;
+}
+
+.footer-bottom-feedback-mail,
+.footer-bottom-developer a {
+    color: #ffd180;
+}
 
 
+
+.footer {
+    background-color: #32425c;
+}
+
+.header-top,
+.footer-bottom {
+    background-color: #293449;
+}
+
+
+
+.modal {
+    display: none;
+}
 
 
 
