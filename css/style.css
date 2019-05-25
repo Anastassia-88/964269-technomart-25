@@ -13,67 +13,239 @@ a {
     text-decoration: none;
 }
 
+.button
+{
+    font-family: 'Cuprum', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    color: #fff;
+    border: none;
+    background-color: #ee3643;
+}
+
+.button:hover,
+.button:focus
+{
+    background-color: #ca2c37;
+}
+
+.button:active
+{
+    background-color: #ba2732;
+}
+
 .header {
     color: #000;
 
     background-color: #f4f7f9;
 }
 
-.header-top,
-.main-navigation
+.header-top
+{
+    font-size: 17px;
+    line-height: 18px;
+    color: #ffffff;
+
+    background-color: #293449;
+}
+
+.search-form input {
+    border: none;
+    background-color: #293449;
+}
+
+.search-form input:focus {
+    border: none;
+    color: #000;
+    background-color: #fff;
+}
+
+.header-top a
 {
     color: #ffffff;
 
     background-color: #293449;
 }
 
-.header-top a
+.header-top a:active
+{
+    color: rgba(255, 255, 255, 0.6);
+
+    background-color: #161d29;
+}
+
+a.header-top-logo
+{
+    background-color: #ee3643;
+}
+
+a.header-top-logo:hover,
+a.header-top-logo:active
+{
+    background-color: #ca2c37;
+}
+
+a.header-top-order {
+    color: #ffffff;
+
+    background-color: #63a63e;
+}
+
+a.header-top-order:hover {
+    color: #ffffff;
+
+    background-color: #5fbb2d;
+}
+
+a.header-top-order:active {
+    color: #ffffff;
+
+    background-color: #518534;
+}
+
+
+a.header-top-basket.filled {
+    color: #ffffff;
+
+    background-color: #ee3643;
+}
+
+.header h1
+{
+    font-size: 16px;
+    line-height: 23px;
+    font-style: italic;
+    color: #ee3643;
+
+    background-color: #f4f7f9;
+}
+
+p.header-contacts-tel
+{
+    font-size: 21px;
+    line-height: 21px;
+    text-align: center;
+    color: #ee3643;
+
+}
+
+p.header-contacts-address
+{
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #32425c;
+}
+
+.header-user-navigation-button
+{
+    font-size: 21px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.header-user-navigation-button-login:hover,
+.header-user-navigation-button-sign-up:hover
+.header-user-navigation-button-login:focus,
+.header-user-navigation-button-sign-up:focus
+{
+    color: #ee3643;
+}
+
+.header-user-navigation-button:active
+{
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.header-user-navigation-my-orders,
+.header-user-navigation-personal-area
+{
+    font-size: 16px;
+    color: #32425c;
+    text-decoration: underline;
+}
+
+.header-user-navigation-my-orders:hover,
+.header-user-navigation-my-orders:focus,
+.header-user-navigation-personal-area:hover,
+.header-user-navigation-personal-area:focus
+{
+    color: #ee3643;
+}
+
+
+
+
+
+
+
+
+
+nav.main-navigation
+{
+    font-size: 17px;
+    line-height: 17px;
+    color: #ffffff;
+
+    background-color: #293449;
+}
+
+ul.site-navigation
+{
+    list-style: none;
+}
+
+.site-navigation a
 {
     color: #ffffff;
 }
 
-.site-navigation a,
-.header-user-navigation a
+.site-navigation a:hover,
+.site-navigation a:focus
 {
-    color: #000000;
+    color: #ffffff;
+
+    background-color: #32425c;
 }
 
+.site-navigation a:active
+{
+    color: rgba(255, 255, 255, 0.5);
 
-.site-navigation,
-.promo-small-items-list,
-.bestsellers-list,
-.popular-manufacturers-list,
-.services-list,
-.transport-companies-list,
-.footer-navigation,
-.footer-bottom-social,
-.breadcrumbs,
-.filter-options-list,
-.sort-by-list,
-.catalog-list,
-.pagination-list {
+    background-color: #1d2739;
+}
+
+.index-columns h2
+{
+    font-size: 30px;
+    line-height: 30px;
+
+    text-transform: uppercase;
+}
+
+.index-columns p
+{
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+ul.transport-companies-list
+{
     list-style: none;
 }
 
-
-.promo-big-item a,
-.promo-small-item a,
-.popular a,
-.services a,
-.company-info a,
-.contacts a {
-    color: #000000;
+ul.transport-companies-list li {
+    font-size: 18px;
+    line-height: 20px;
 }
-
-
-
-
-
-
-
-
-
-
 
 .footer {
     color: #ffffff;
@@ -81,6 +253,57 @@ a {
     background-color: #32425c;
 }
 
+a.footer-logo
+{
+    background-color: #ee3643;
+}
+
+a.footer-logo:hover,
+a.footer-logo:active
+{
+    background-color: #ca2c37;
+}
+
+.footer-contacts
+{
+    font-size: 18px;
+    line-height: 24px;
+    font-style: normal;
+
+    color: #f3f7f9;
+}
+
+.footer-navigation {
+    list-style: none;
+}
+
+.footer-navigation a {
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.footer-navigation a.colored
+{
+    color: #ffd180;
+}
+
+.footer-navigation a:hover,
+.footer-navigation a:focus
+{
+    text-decoration: underline;
+}
+
+.footer-navigation a:active
+{
+    color: rgba(241, 245, 247, 0.5);
+    text-decoration: none;
+}
+
+.footer-navigation a.colored:active
+{
+    color: rgba(255, 209, 128, 0.5);
+}
 
 .footer-bottom {
     color: #ffffff;
@@ -88,61 +311,55 @@ a {
     background-color: #293449;
 }
 
-.footer-navigation a,
-.footer-bottom-social a {
-    color: #ffffff;
+.footer-bottom-copyright {
+    font-size: 16px;
+    line-height: 18px;
 }
 
-.footer-bottom-feedback-mail,
+.footer-bottom-social {
+    list-style: none;
+}
+
+.footer-bottom-social a {
+    color: #ffffff;
+
+    background-color: #212a3a;
+}
+
+.footer-bottom-social a:hover,
+.footer-bottom-social a:focus,
+.footer-bottom-social a:active
+{
+    background-color: #ee3643;
+}
+
+.footer-bottom-feedback,
+.footer-bottom-developer
+{
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.footer-bottom-feedback-mail a,
 .footer-bottom-developer a {
     color: #ffd180;
 }
 
+.footer-bottom-feedback-mail a:hover,
+.footer-bottom-feedback-mail a:focus
+.footer-bottom-developer a:hover,
+.footer-bottom-developer a:focus
+{
+    text-decoration: underline;
+}
 
-
-
+.footer-bottom-feedback-mail a:active,
+.footer-bottom-developer a:active
+{
+    color: #ee3643;
+    text-decoration: none;
+}
 
 .modal {
     display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
