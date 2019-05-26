@@ -257,21 +257,128 @@ ul.site-navigation
     line-height: 30px;
 }
 
-.promo-small-item-gold {
+.promo-small-item:nth-child(1) {
     background-color: #ffbf47;
 }
 
-.promo-small-item-blue {
+.promo-small-item:nth-child(2) {
     background-color: #3bbce3;
 }
 
-.promo-small-item-lilac
-{
+.promo-small-item:nth-child(3) {
     background-color: #dc91d8;
 }
 
-.promo-small-item-green {
+.promo-small-item:nth-child(4) {
     background-color: #8ed78f;
+}
+
+.promo-small-item:nth-child(5) {
+    background-color: #ffc047;
+}
+
+.promo-small-item:nth-child(1) .button {
+    background-color: rgb(230,174,62);
+}
+
+.promo-small-item:nth-child(2) .button {
+    background-color: rgb(50,170,205);
+}
+
+.promo-small-item:nth-child(3) .button {
+    background-color: rgb(199,131,195);
+}
+
+.promo-small-item:nth-child(4) .button {
+    background-color: rgb(129,194,129);
+}
+
+.promo-small-item:nth-child(5) .button {
+    background-color: rgb(230,174,62);
+}
+
+.popular-heading
+{
+    background-color: #f9f5f0;
+}
+
+.popular-title
+{
+    font-size: 30px;
+    line-height: 30px;
+
+    text-transform: uppercase;
+}
+
+.popular-manufacturers-list
+{
+    list-style: none;
+}
+
+.popular-manufacturers-item
+{
+    border: 1px solid #eaeaea;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.services
+{
+    background-color: #f4f7f9;
+}
+
+.services-title
+{
+    font-size: 30px;
+    line-height: 30px;
+
+    text-transform: uppercase;
+}
+
+.services-title a
+{
+    color: #000000;
+}
+
+.services-description
+{
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.services-list
+{
+    list-style: none;
+}
+
+.service-item a
+{
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 30px;
+    color: #ffffff;
+    background-color: #32425c;
+}
+
+.service-item-current a
+{
+    color: #32425c;
+    background-color: #fff;
+}
+
+.service-item-title a
+{
+    font-size: 36px;
+    line-height: 36px;
+    color: #32425c;
+}
+
+.service-item-description
+{
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
 }
 
 .breadcrumbs
