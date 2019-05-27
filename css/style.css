@@ -288,27 +288,27 @@ ul.site-navigation
     background-color: #ffc047;
 }
 
-.promo-small-item:nth-child(1) .button
+.promo-small-item-yellow-bright .promo-small-item-button
 {
     background-color: rgb(230,174,62);
 }
 
-.promo-small-item:nth-child(2) .button
+.promo-small-item-blue .promo-small-item-button
 {
     background-color: rgb(50,170,205);
 }
 
-.promo-small-item:nth-child(3) .button
+.promo-small-item-lilac .promo-small-item-button
 {
     background-color: rgb(199,131,195);
 }
 
-.promo-small-item:nth-child(4) .button
+.promo-small-item-green .promo-small-item-button
 {
     background-color: rgb(129,194,129);
 }
 
-.promo-small-item:nth-child(5) .button
+.promo-small-item-yellow-pale .promo-small-item-button
 {
     background-color: rgb(230,174,62);
 }
