@@ -263,27 +263,27 @@ ul.site-navigation
     line-height: 30px;
 }
 
-.promo-small-item:nth-child(1)
+.promo-small-item-yellow-bright
 {
     background-color: #ffbf47;
 }
 
-.promo-small-item:nth-child(2)
+.promo-small-item-blue
 {
     background-color: #3bbce3;
 }
 
-.promo-small-item:nth-child(3)
+.promo-small-item-lilac
 {
     background-color: #dc91d8;
 }
 
-.promo-small-item:nth-child(4)
+.promo-small-item-green
 {
     background-color: #8ed78f;
 }
 
-.promo-small-item:nth-child(5)
+.promo-small-item-yellow-pale
 {
     background-color: #ffc047;
 }
