@@ -103,7 +103,7 @@ display: flex
 
 .header-top-logo
 {
-  display: block;  
+    
   background-color: green;
     width: 220px;
     height: 42px;
