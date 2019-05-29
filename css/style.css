@@ -101,36 +101,39 @@ display: flex
     background-color: #161d29;
 }
 
-a.header-top-logo
+.header-top-logo
 {
     background-color: #ee3643;
+    width: 220px;
+    height: 42px;
+    margin-right: 15px;
 }
 
-a.header-top-logo:hover,
-a.header-top-logo:active
+.header-top-logo:hover,
+.header-top-logo:active
 {
     background-color: #ca2c37;
 }
 
-a.header-top-order
+.header-top-order
 {
     color: #fff;
     background-color: #63a63e;
 }
 
-a.header-top-order:hover
+.header-top-order:hover
 {
     color: #fff;
     background-color: #5fbb2d;
 }
 
-a.header-top-order:active
+.header-top-order:active
 {
     color: #fff;
     background-color: #518534;
 }
 
-a.header-top-basket.filled
+.header-top-basket.filled
 {
     color: #fff;
     background-color: #ee3643;
