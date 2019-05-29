@@ -70,7 +70,7 @@ width: 940px;
   margin-bottom: 46px;
 }
 
-.header-top.container
+.header-top .container
 {
 display: flex
 }
