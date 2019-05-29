@@ -1,19 +1,7 @@
-body > *
+.visually-hidden
 {
-  background: rgba(255, 0, 0, 0.3);
+    display: none;
 }
-
-body > * > *
-{
-  background: rgba(255, 255, 0, 0.3);
-}
-
-body > * > * > *
-{
-  background: rgba(0, 0, 255, 0.3);
-}
-
-
 
 body
 {
@@ -64,6 +52,14 @@ a
     background-color: #f4f7f9;
 }
 
+.container 
+{
+width: 940px;
+  margin: 0 auto;
+  
+}
+
+
 .header-top
 {
     font-size: 17px;
@@ -71,7 +67,14 @@ a
 
     color: #fff;
     background-color: #293449;
+  margin-bottom: 46px;
 }
+
+.header-top.container
+{
+display: flex
+}
+
 
 .search-form input
 {
