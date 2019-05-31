@@ -7,23 +7,24 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="inner-page">
-
-
-    <header class="header">
-        <div class="header-top">
+<header class="header">
+    <div class="header-top">
+        <div class="container">
             <a href="index.html" class="header-top-logo"><img src="img/logo.svg" alt="logo" width="109" height="19"></a>
-            <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
-                <p>
-                    <label for="search">Поиск:</label>
-                    <input id="search" type="search" name="search">
-                </p>
+            <form class="search-form"
+                  method="get" action="https://echo.htmlacademy.ru">
+                <input type="search" name="search" placeholder="Поиск:">
             </form>
-            <a href="#" class="header-top-favourite">Закладки: 0</a>
-            <a href="#" class="header-top-basket filled">Корзина: 0</a>
-            <a href="#" class="header-top-order">Оформить заказ</a>
+            <a href="#" class="header-top-button header-top-button-favourite">Закладки: 0</a>
+            <a href="#" class="header-top-button header-top-button-basket filled">Корзина: 10</a>
+            <a href="#" class="header-top-button header-top-button-order">Оформить заказ</a>
         </div>
-        <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+    </div>
+
+    <div class="header-middle container">
+        <h1 class="header-middle-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
         <section class="header-contacts">
             <h2 class="visually-hidden">Контакты</h2>
             <p class="header-contacts-tel">
@@ -36,35 +37,25 @@
         <section class="header-user-navigation">
             <h2 class="visually-hidden">Пользовательская навигация</h2>
             <a class="header-user-navigation-button header-user-navigation-button-username" href="#">Равшан Джамшутович</a>
-            <a class="header-user-navigation-my-orders" href="#">Мои заказы</a>
-            <a class="header-user-navigation-personal-area" href="#">Личный кабинет</a>
+            <div>
+                <a class="header-user-navigation-my-orders" href="#">Мои заказы</a>
+                <a class="header-user-navigation-personal-area" href="#">Личный кабинет</a>
+            </div>
         </section>
-        <nav class="main-navigation">
-            <ul class="site-navigation">
-                <li>
-                    <a href="index.html">Главная</a>
-                </li>
-                <li>
-                    <a href="#">Компания</a>
-                </li>
-                <li>
-                    <a href="#">Каталог</a>
-                </li>
-                <li>
-                    <a href="#">Новости</a>
-                </li>
-                <li>
-                    <a href="#">Спецпредложения</a>
-                </li>
-                <li>
-                    <a href="#">Доставка</a>
-                </li>
-                <li>
-                    <a href="#">Контакты</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    </div>
+
+    <nav class="main-navigation container">
+        <ul class="site-navigation">
+            <li class="site-navigation-item"><a href="index.html" class="site-navigation-item-link">Главная</a></li>
+            <li class="site-navigation-item"><a href="#" class="site-navigation-item-link">Компания</a></li>
+            <li class="site-navigation-item"><a href="catalog.html" class="site-navigation-item-link">Каталог</a></li>
+            <li class="site-navigation-item"><a href="#" class="site-navigation-item-link">Новости</a></li>
+            <li class="site-navigation-item"><a href="#" class="site-navigation-item-link">Спецпредложения</a></li>
+            <li class="site-navigation-item"><a href="#" class="site-navigation-item-link">Доставка</a></li>
+            <li class="site-navigation-item"><a href="#" class="site-navigation-item-link">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
 
     <main class="container">
         <ul class="breadcrumbs">
