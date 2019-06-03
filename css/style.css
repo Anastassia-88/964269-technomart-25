@@ -1,4 +1,3 @@
-.visually-hidden,
 .hidden,
 div.promo-big-item-perforators,
 .buy-area.hidden,
@@ -6,6 +5,10 @@ div.promo-big-item-perforators,
 {
     display: none;
 }
+
+
+
+
 
 body
 {
@@ -22,6 +25,30 @@ body
 a
 {
     text-decoration: none;
+}
+
+img
+{
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .button
@@ -147,33 +174,26 @@ a
 
 
 
-.inner-page ::-webkit-input-placeholder
+.filters ::-webkit-input-placeholder
 {
     /* Chrome/Opera/Safari */
     color: #000;
 }
-.inner-page ::-moz-placeholder
+.filters ::-moz-placeholder
 {
     /* Firefox 19+ */
     color: #000;
 }
-.inner-page :-ms-input-placeholder
+.filters :-ms-input-placeholder
 {
     /* IE 10+ */
     color: #000;
 }
-.inner-page :-moz-placeholder
+.filters :-moz-placeholder
 {
     /* Firefox 18- */
     color: #000;
 }
-
-
-
-
-
-
-
 
 
 .search-form
@@ -466,6 +486,7 @@ a
 .site-navigation
 {
     display: flex;
+    flex-wrap: wrap;
 
     min-height: 60px;
     margin: 0;
