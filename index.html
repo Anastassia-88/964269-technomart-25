@@ -14,7 +14,12 @@
       <div class="container">
           <a href="index.html" class="logo header-top-logo"><img src="img/logo.svg" alt="logo" width="109" height="19"></a>
           <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
-               <input type="search" name="search" placeholder="Поиск:">
+            <input type="search" name="search" placeholder="Поиск:" id="search">
+            <label for="search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                <path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
+              </svg>
+            </label>
           </form>
           <a href="#" class="header-top-button header-top-button-favourite">Закладки: 0</a>
           <a href="#" class="header-top-button header-top-button-basket">Корзина: 0</a>
@@ -35,7 +40,12 @@
       </section>
       <section class="header-user-navigation">
         <h2 class="visually-hidden">Пользовательская навигация</h2>
-        <a class="header-user-navigation-button header-user-navigation-button-login" href="#">Войти</a>
+        <a class="header-user-navigation-button header-user-navigation-button-login" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+            <path d="M14.875 8.5L6 0v6H0v5h6v6z"/>
+            <path d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/>
+          </svg>
+          Войти</a>
         <a class="header-user-navigation-button header-user-navigation-button-sign-up" href="#">Регистрация</a>
       </section>
     </div>
@@ -59,19 +69,20 @@
         <h2 class="visually-hidden">Промо</h2>
 
         <div class="promo-top">
-          <div class="promo-small-item promo-small-item-yellow-bright">
+          <div class="promo-small-item promo-small-item-materials">
+            <div class="flag flag-new">Новинка</div>
             <h3 class="promo-small-item-title">
               <a href="#">Материалы</a>
             </h3>
             <a class="button promo-small-item-button">На любой вкус</a>
           </div>
-          <div class="promo-small-item promo-small-item-blue">
+          <div class="promo-small-item promo-small-item-instruments">
             <h3 class="promo-small-item-title">
               <a href="#">Инструмент</a>
             </h3>
             <a class="button promo-small-item-button">На все случаи</a>
           </div>
-          <div class="promo-small-item promo-small-item-lilac">
+          <div class="promo-small-item promo-small-item-equipment">
             <h3 class="promo-small-item-title">
               <a href="#">Техника</a>
             </h3>
@@ -93,13 +104,13 @@
           </div>
 
           <div class="promo-bottom-right">
-            <div class="promo-small-item promo-small-item-green">
+            <div class="promo-small-item promo-small-item-discount">
               <h3 class="promo-small-item-title">
                 <a href="#">Скидки 50%</a>
               </h3>
               <a class="button promo-small-item-button">На 350 товаров</a>
             </div>
-            <div class="promo-small-item promo-small-item-yellow-pale">
+            <div class="promo-small-item promo-small-item-delivery">
               <h3 class="promo-small-item-title">
                 <a href="#">Доставка</a>
               </h3>
