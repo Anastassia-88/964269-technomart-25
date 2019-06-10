@@ -463,9 +463,6 @@ input[type='radio'].visually-hidden
     flex-direction: column;
 }
 
-
-
-
 .header-user-navigation-button
 {
     font-size: 21px;
@@ -505,22 +502,39 @@ input[type='radio'].visually-hidden
     fill: #32425c;
 }
 
-.header-user-navigation-button-username
-{
-    position: relative;
-
-    width: 299px;
-    margin-bottom: 10px;
-    padding-left: 47px;
-}
-
 .header-user-navigation-button-login:active svg
 {
     fill: #c5c5c5;
 }
 
 
-.header-user-navigation-button-username .icon-user
+.header-user-navigation-top
+{
+    display: flex;
+}
+
+.header-user-navigation-username
+{
+    font-size: 21px;
+    line-height: 21px;
+
+    position: relative;
+
+    display: flex;
+
+    box-sizing: border-box;
+    width: 260px;
+    height: 45px;
+    margin-bottom: 10px;
+    padding-left: 50px;
+
+    color: #000;
+    background-color: #fff;
+
+    align-items: center;
+}
+
+.header-user-navigation-username .icon-user
 {
     position: absolute;
     top: 13px;
@@ -534,18 +548,29 @@ input[type='radio'].visually-hidden
     fill: #c5c5c5;
 }
 
-.header-user-navigation-button-username:hover .icon-user,
-.header-user-navigation-button-username:focus .icon-user
+.header-user-navigation-username:hover .icon-user,
+.header-user-navigation-username:focus .icon-user
 {
     fill: #32425c;
 }
 
-.header-user-navigation-button-username:active .icon-user
+.header-user-navigation-username:active .icon-user
 {
     fill: #c5c5c5;
 }
 
-.header-user-navigation-button-username .icon-logout
+.header-user-navigation-logout
+{
+    position: relative;
+
+    box-sizing: border-box;
+    width: 40px;
+    height: 45px;
+
+    background-color: #fff;
+}
+
+.header-user-navigation-logout-icon
 {
     position: absolute;
     top: 15px;
@@ -559,13 +584,13 @@ input[type='radio'].visually-hidden
     fill: #c5c5c5;
 }
 
-.header-user-navigation-button-username:hover .icon-logout,
-.header-user-navigation-button-username:focus .icon-logout
+.header-user-navigation-logout:hover .header-user-navigation-logout-icon,
+.header-user-navigation-logout:focus .header-user-navigation-logout-icon
 {
     fill: #32425c;
 }
 
-.header-user-navigation-button-username:active .icon-logout
+.header-user-navigation-logout:active .header-user-navigation-logout-icon
 {
     fill: #c5c5c5;
 }
@@ -577,7 +602,7 @@ input[type='radio'].visually-hidden
     padding-left: 25px;
 }
 
-.header-user-navigation div
+.header-user-navigation-bottom
 {
     font-size: 16px;
     line-height: 18px;
@@ -597,7 +622,7 @@ input[type='radio'].visually-hidden
     color: #ee3643;
 }
 
-.header-user-navigation-button:active
+.header-user-navigation-username:active
 {
     color: rgba(0, 0, 0, .3);
 }
@@ -693,7 +718,6 @@ input[type='radio'].visually-hidden
 
 .site-navigation-item-link
 {
-    display: block;
     display: flex;
 
     width: 100%;
@@ -1358,7 +1382,58 @@ input[type='radio'].visually-hidden
     background-color: #f7f3ec;
 }
 
-.filters-price-range
+.range-controls
+{
+    height: 80px;
+    background-color: #f7f3ec;
+    margin-bottom: 9px;
+    padding-top: 39px;
+    box-sizing: border-box;
+    padding-right: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.range-controls .scale {
+    height: 2px;
+
+    background: #d7dcde;
+}
+
+.range-controls .bar {
+    width: 70%;
+    height: 2px;
+
+    background: #00ca74;
+}
+
+.range-controls .toggle {
+    width: 4px;
+    height: 4px;
+    padding: 0;
+
+    border: 8px solid #ffffff;
+    background-color: #ababab;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+    position: absolute;
+    top: 31px;
+    left: 0;
+    cursor: pointer;
+}
+
+.range-controls .toggle-min {
+    left: 18px;
+}
+
+.range-controls .toggle-max {
+    left: 160px;
+}
+
+
+
+
+.price-controls
 {
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 17px;
@@ -1367,7 +1442,8 @@ input[type='radio'].visually-hidden
     display: flex;
 }
 
-.filters-price-range input
+.min-price,
+.max-price
 {
     line-height: 38px;
 
@@ -1376,7 +1452,7 @@ input[type='radio'].visually-hidden
     padding: 0;
 }
 
-.filters-price-between
+.price-controls span
 {
     font-size: 16px;
 
@@ -1990,7 +2066,6 @@ input[type='radio'].visually-hidden
 .company-info-button,
 .contacts-button
 {
-    display: block;
     display: flex;
 
     height: 38px;
@@ -2216,17 +2291,21 @@ input[type='radio'].visually-hidden
 .modal
 {
     position: fixed;
-
+    z-index: 100;
     top: 50%;
     left: 50%;
-    background-color: #ffffff;
-    z-index: 100;
+
+    display: none;
+
+    background-color: #fff;
 }
 
 .modal-map
 {
     width: 940px;
     height: 446px;
+    margin-top: -223px;
+    margin-left: -470px;
 
     box-shadow: 0 0 15px 1px rgba(47, 42, 43, .5);
 }
@@ -2238,6 +2317,8 @@ input[type='radio'].visually-hidden
     box-sizing: border-box;
     width: 620px;
     height: 430px;
+    margin-top: -215px;
+    margin-left: -310px;
 
     border-top: 7px solid #ee3643;
     box-shadow: 0 20px 40px 0 rgba(0, 0, 0, .75);
@@ -2252,7 +2333,7 @@ input[type='radio'].visually-hidden
     padding-left: 80px;
 }
 
-.modal-bottom
+.feedback-form .modal-bottom
 {
     display: flex;
 
@@ -2358,20 +2439,22 @@ input[type='radio'].visually-hidden
     width: 21px;
     height: 21px;
 
+    cursor: pointer;
+
     border: none;
     background-color: transparent;
     background-image: url('../img/form-close.svg');
-    cursor: pointer;
 }
 
 .modal-basket
 {
-    display: flex;
-    flex-direction: column;
+    position: fixed;
 
     box-sizing: border-box;
     width: 620px;
     height: 282px;
+    margin-top: -141px;
+    margin-left: -310px;
 
     border-top: 7px solid #ee3643;
     box-shadow: 0 20px 40px 0 rgba(41, 52, 73, .75);
@@ -2411,7 +2494,22 @@ input[type='radio'].visually-hidden
 
 .modal-basket .modal-bottom
 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+
+    box-sizing: border-box;
+    width: 100%;
+    height: 112px;
+    padding-right: 80px;
+    padding-left: 80px;
+
+    background-color: #f4f4f4;
+
     justify-content: space-between;
+    align-items: center;
 }
 
 .basket-button-continue-shopping

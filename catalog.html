@@ -41,19 +41,23 @@
         </section>
         <section class="header-user-navigation">
             <h2 class="visually-hidden">Пользовательская навигация</h2>
-            <a class="header-user-navigation-button header-user-navigation-button-username" href="#">
+            <div class="header-user-navigation-top">
+            <a class="header-user-navigation-username" href="#">
                 <svg class="icon-user" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
                     <path d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/>
                 </svg>
                 Равшан Джамшутович
-                <svg class="icon-logout" xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17">
+            </a>
+            <a href="#" class="header-user-navigation-logout">
+                <svg class="header-user-navigation-logout-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17">
                     <g>
                         <path d="M21 8.5L12.125 0v6h-6v5h6v6z"/>
                         <path d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/>
                     </g>
                 </svg>
             </a>
-            <div>
+            </div>
+            <div class="header-user-navigation-bottom">
                 <a class="header-user-navigation-my-orders" href="#">Мои заказы</a>
                 <a class="header-user-navigation-personal-area" href="#">Личный кабинет</a>
             </div>
@@ -87,15 +91,21 @@
                     <h3 class="filters-title">Фильтр:</h3>
                     <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
                         <fieldset class="filter-item">
-
                                 <legend class="filter-item-title">Цена:</legend>
-                                <input type="range" min="0" max="30000" step="500" value="25000">
-
-                            <p class="filters-price-range">
-                                <input class="filters-price filters-price-min" type="number" name="filters-price-min" placeholder="0">
-                                <span class="filters-price-between">—</span>
-                                <input class="filters-price filters-price-max" type="number" name="filters-price-max" placeholder="30000">
-                            </p>
+                            <div class="range-filter">
+                                <div class="range-controls">
+                                    <div class="scale">
+                                        <div class="bar" style="margin-left: 0%; width: 80%"></div>
+                                    </div>
+                                    <div class="toggle toggle-min"></div>
+                                    <div class="toggle toggle-max"></div>
+                                </div>
+                                <div class="price-controls">
+                                        <input class="min-price" type="number" name="min-price" value="0">
+                                        <span>—</span>
+                                        <input class="max-price" type="number" name="max-price" value="30000">
+                                </div>
+                            </div>
                         </fieldset>
 
                         <fieldset class="filter-item">
@@ -470,7 +480,7 @@
             <p class="footer-bottom-developer">
                 Разработано —<br>
                 <span  class="footer-bottom-developer-link">
-            <a href="https://htmlacademy.ru/">htmlacademy.ru</a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </span>
             </p>
         </div>
@@ -484,7 +494,7 @@
             <a href="#" class="button basket-button">Оформить заказ</a>
             <a href="#" class="button basket-button basket-button-continue-shopping">Продолжить покупки</a>
         </div>
-        <button class="modal-close"></button>
+        <button class="modal-close" type="button"></button>
     </section>
 </body>
 </html>
