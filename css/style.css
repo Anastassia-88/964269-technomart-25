@@ -802,7 +802,7 @@ input[type='radio'].visually-hidden
     box-sizing: border-box;
     width: 620px;
     height: 266px;
-    padding-top: 27px;
+    padding-top: 23px;
     padding-bottom: 22px;
     padding-left: 24px;
 
@@ -871,7 +871,7 @@ input[type='radio'].visually-hidden
     line-height: 36px;
 
     margin: 0;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 
     text-transform: uppercase;
 }
@@ -904,9 +904,9 @@ input[type='radio'].visually-hidden
     box-sizing: border-box;
     width: 300px;
     height: 123px;
-    padding-top: 23px;
+    padding-top: 20px;
     padding-bottom: 22px;
-    padding-left: 25px;
+    padding-left: 22px;
 
     justify-content: space-between;
 }
@@ -975,7 +975,7 @@ input[type='radio'].visually-hidden
     height: 38px;
 
     color: #fff;
-    background-color: rgba(255, 255, 255, .1);
+    background-color: rgba(0, 0, 0, .1);
 
     align-items: center;
     justify-content: center;
@@ -984,12 +984,12 @@ input[type='radio'].visually-hidden
 .promo-small-item-button:hover,
 .promo-small-item-button:focus
 {
-    background-color: rgba(255, 255, 255, .2);
+    background-color: rgba(0, 0, 0, .2);
 }
 
 .promo-small-item-button:active
 {
-    background-color: rgba(255, 255, 255, .3);
+    background-color: rgba(0, 0, 0, .3);
 }
 
 .popular-heading
