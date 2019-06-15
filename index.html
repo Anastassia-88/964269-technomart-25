@@ -149,8 +149,8 @@
                 25500 ₽
               </p>
               <p class="buy-area">
-                          <a class="button buy-button buy-area-button" href="#">Купить</a>
-                          <a class="button favorite-button buy-area-button" href="#">В закладки</a>
+                <a class="button buy-area-button buy-button basket-link" href="#">Купить</a>
+                <a class="button favorite-button buy-area-button" href="#">В закладки</a>
                </p>
             </article>
           </li>
@@ -174,7 +174,7 @@
                 15500 ₽
               </p>
               <p class="buy-area">
-                          <a class="button buy-button buy-area-button" href="#">Купить</a>
+                          <a class="button buy-button buy-area-button basket-link" href="#">Купить</a>
                           <a class="button favorite-button buy-area-button" href="#">В закладки</a>
                </p>
             </article>
@@ -199,7 +199,7 @@
                 25500 ₽
               </p>
               <p class="buy-area">
-                          <a class="button buy-button buy-area-button" href="#">Купить</a>
+                          <a class="button buy-button buy-area-button basket-link" href="#">Купить</a>
                           <a class="button favorite-button buy-area-button" href="#">В закладки</a>
                </p>
             </article>
@@ -222,7 +222,7 @@
                 12500 ₽
               </p>
               <p class="buy-area">
-                          <a class="button buy-button buy-area-button" href="#">Купить</a>
+                          <a class="button buy-button buy-area-button basket-link" href="#">Купить</a>
                           <a class="button favorite-button buy-area-button" href="#">В закладки</a>
                </p>
             </article>
@@ -343,13 +343,13 @@
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
         <p>
-          <a href="map.html">
+          <a href="map.html" class="modal-map-link">
             <img src="img/map-small.jpg" width="300" height="158"
                  alt="Офис компании по адресу улица Большая Конюшенная 19/8, Санкт-Петербург">
           </a>
         </p>
         <p>
-          <a class="button contacts-button" href="#">Заблудились? Напишите нам!</a>
+          <a class="button contacts-button modal-feedback-link" href="#">Заблудились? Напишите нам!</a>
         </p>
       </section>
     </div>
@@ -416,7 +416,7 @@
         <p class="footer-bottom-developer">
           Разработано —<br>
           <span  class="footer-bottom-developer-link">
-            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">https://htmlacademy.ru/</a>
           </span>
         </p>
       </div>
@@ -425,8 +425,9 @@
 
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <img src="img/map-big.jpg" width="940" height="446"
-         alt="Офис компании по адресу улица Большая Конюшенная 19/8, Санкт-Петербург">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858716359332!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sde!4v1560498315749!5m2!1sru!2sde" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <p><img src="img/map-big.jpg" width="940" height="446"
+         alt="Офис компании по адресу улица Большая Конюшенная 19/8, Санкт-Петербург"></p>
     <button class="modal-close" type="button"></button>
   </section>
 
@@ -452,6 +453,16 @@
         <button type="submit" class="button submit-button">Отправить</button>
       </div>
     </form>
+    <button class="modal-close" type="button"></button>
+  </section>
+
+  <section class="modal modal-basket">
+    <h2 class="visually-hidden">Сообщение о добавлении товара в корзину</h2>
+    <p class="modal-basket-text">Товар добавлен в корзину!</p>
+    <div class="modal-bottom">
+      <a href="#" class="button basket-button">Оформить заказ</a>
+      <a href="#" class="button basket-button basket-button-continue-shopping">Продолжить покупки</a>
+    </div>
     <button class="modal-close" type="button"></button>
   </section>
   <script src="js/script.js"></script>
