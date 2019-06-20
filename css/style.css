@@ -2343,6 +2343,14 @@ input[type='radio'].visually-hidden
     }
 }
 
+@keyframes appear
+{
+    to
+    {
+        opacity: 1;
+    }
+}
+
 @keyframes shake
 {
     0%,
@@ -2385,6 +2393,12 @@ input[type='radio'].visually-hidden
     display: block;
 
     animation: bounce .6s;
+}
+
+.modal-show-appear {
+    display: block;
+
+    animation: appear .6s;
 }
 
 .modal-error

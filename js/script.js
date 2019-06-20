@@ -3,29 +3,34 @@ var basketLink = document.querySelectorAll(".basket-link");
 
 var basketPopup = document.querySelector(".modal-basket");
 var basketClose = basketPopup.querySelector(".modal-close");
+var continueShopping = basketPopup.querySelector(".basket-button-continue-shopping");
+
 
 basketLink.forEach (function (elem) {
     elem.addEventListener("click", function(evt) {
         evt.preventDefault();
-        basketPopup.classList.add("modal-show");
+        basketPopup.classList.add("modal-show-appear");
     });
 });
 
 basketClose.addEventListener("click", function (evt) {
     evt.preventDefault();
-    basketPopup.classList.remove("modal-show");
+    basketPopup.classList.remove("modal-show-appear");
 });
 
 window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
         evt.preventDefault();
-        if (basketPopup.classList.contains("modal-show")) {
-            basketPopup.classList.remove("modal-show");
+        if (basketPopup.classList.contains("modal-show-appear")) {
+            basketPopup.classList.remove("modal-show-appear");
         }
     }
 });
 
-
+continueShopping.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    basketPopup.classList.remove("modal-show-appear");
+});
 
 
 
