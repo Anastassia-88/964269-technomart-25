@@ -1716,11 +1716,16 @@ input[type='radio'].visually-hidden
 }
 
 .filter-input-checkbox:hover + label::before,
-.filter-input-radio:hover + label::before
+.filter-input-radio:hover + label::before,
+.filter-input-checkbox:focus + label::before,
+.filter-input-radio:focus + label::before
 {
     opacity: 1;
 }
 
+
+.filter-input-checkbox:disabled + label,
+.filter-input-radio:disabled + label,
 .filter-input-checkbox:disabled + label::before,
 .filter-input-radio:disabled + label::before
 {
@@ -2448,7 +2453,7 @@ input[type='radio'].visually-hidden
 
 .footer-bottom-feedback
 {
-    margin-left: 120px;
+    margin-left: 100px;
     padding-right: 15px;
     padding-left: 15px;
 }
