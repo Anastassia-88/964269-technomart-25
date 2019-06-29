@@ -126,6 +126,12 @@ input[type='radio'].visually-hidden
     box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, .24);
 }
 
+.footer-logo
+{
+    height: 68px;
+}
+
+
 .logo:hover
 {
     background-color: #ca2c37;
@@ -711,6 +717,8 @@ input[type='radio'].visually-hidden
     min-height: 60px;
     margin: 0;
     padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
 
     list-style: none;
 
@@ -928,7 +936,7 @@ input[type='radio'].visually-hidden
 
 .promo-big-item-slider-scroll-next
 {
-    right: 25px;
+    right: 20px;
 
     background-image: url('../img/icon-right.svg');
 }
@@ -1056,8 +1064,6 @@ input[type='radio'].visually-hidden
 
 .promo-small-item-button
 {
-    line-height: 38;
-
     display: flex;
 
     width: 135px;
@@ -1068,6 +1074,12 @@ input[type='radio'].visually-hidden
     background-color: rgba(0, 0, 0, .1);
 
     justify-content: center;
+    font-family: 'Cuprum', Arial, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    border: none;
+    align-items: center;
 }
 
 .promo-small-item-button:hover,
@@ -1087,8 +1099,8 @@ input[type='radio'].visually-hidden
 
     height: 89px;
     margin-bottom: 20px;
-    padding-right: 24px;
-    padding-left: 30px;
+    padding-right: 23px;
+    padding-left: 28px;
 
     background-color: #f9f5f0;
 
@@ -1118,10 +1130,8 @@ input[type='radio'].visually-hidden
 
     align-items: center;
     justify-content: center;
+    border-radius: 3px;
 }
-
-
-
 
 .popular-manufacturers-list
 {
@@ -1149,6 +1159,7 @@ input[type='radio'].visually-hidden
     vertical-align: middle;
 
     border: 1px solid #eaeaea;
+    box-sizing: border-box;
 }
 
 .popular-manufacturers-item a
@@ -1174,10 +1185,11 @@ input[type='radio'].visually-hidden
 
 .services
 {
-    padding-top: 68px;
-    padding-bottom: 51px;
+    padding-top: 65px;
 
     background-color: #f4f7f9;
+    min-height: 522px;
+    box-sizing: border-box;
 }
 
 .service-wrapper
@@ -1186,7 +1198,6 @@ input[type='radio'].visually-hidden
 
     display: flex;
 
-    margin-bottom: 100px;
 }
 
 .services-title
@@ -1195,11 +1206,12 @@ input[type='radio'].visually-hidden
     line-height: 30px;
 
     margin: 0;
-    margin-bottom: 32px;
+    margin-bottom: 25px;
 
     text-transform: uppercase;
 
     color: #000;
+    font-weight: 400;
 }
 
 .services-title a
@@ -1298,7 +1310,7 @@ input[type='radio'].visually-hidden
 {
     display: none;
 
-    width: 275px;
+    width: 380px;
 }
 
 .service-item-info-current
@@ -1348,6 +1360,19 @@ input[type='radio'].visually-hidden
     background-image: url('../img/credit.png');
 }
 
+.credit-button
+{
+    display: flex;
+
+    width: 195px;
+    height: 38px;
+
+    border-radius: 2px;
+
+    align-items: center;
+    justify-content: center;
+}
+
 .service-item-title
 {
     font-size: 36px;
@@ -1357,6 +1382,8 @@ input[type='radio'].visually-hidden
     margin-bottom: 28px;
 
     color: #32425c;
+    text-transform: uppercase;
+    font-weight: 400;
 }
 
 .service-item-title a
@@ -1373,6 +1400,7 @@ input[type='radio'].visually-hidden
     line-height: 24px;
 
     margin: 0;
+    margin-bottom: 30px;
 }
 
 .breadcrumbs
@@ -1898,7 +1926,7 @@ input[type='radio'].visually-hidden
 {
     height: 170px;
     margin: 0;
-    margin-bottom: 11px;
+    margin-bottom: 9px;
 
     order: -1;
 }
@@ -2117,9 +2145,22 @@ input[type='radio'].visually-hidden
     display: flex;
 
     padding-top: 80px;
-    padding-bottom: 86px;
+    padding-bottom: 140px;
 
     justify-content: space-between;
+
+}
+
+.company-info-title,
+.contacts-title
+{
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 30px;
+
+    text-transform: uppercase;
 }
 
 .index-columns .company-info
@@ -2130,16 +2171,6 @@ input[type='radio'].visually-hidden
 .index-columns .contacts
 {
     width: 300px;
-}
-
-
-.index-columns h2
-{
-    font-size: 30px;
-    font-weight: normal;
-    line-height: 30px;
-
-    text-transform: uppercase;
 }
 
 .index-columns p
@@ -2156,12 +2187,18 @@ input[type='radio'].visually-hidden
     flex-direction: column;
 }
 
-.company-info-text
+.company-info-text,
+.contacts-text
 {
     margin: 0;
     margin-bottom: 25px;
 }
 
+.transport-info-text
+{
+    margin: 0;
+    margin-bottom: 20px;
+}
 
 .contacts
 {
@@ -2172,10 +2209,11 @@ input[type='radio'].visually-hidden
 .transport-companies-list
 {
     margin: 0;
-    margin-bottom: 14px;
     padding: 0;
 
     list-style: none;
+    line-height: 20px;
+    margin-left: 37px;
 }
 
 .transport-company-name
@@ -2185,15 +2223,14 @@ input[type='radio'].visually-hidden
 
     position: relative;
 
-    margin-bottom: 22px;
-    padding-left: 34px;
+    margin-bottom: 20px;
 }
 
 .transport-company-name::before
 {
     position: absolute;
     top: 50%;
-    left: -10px;
+    left: -37px;
 
     width: 25px;
     height: 2px;
@@ -2201,6 +2238,11 @@ input[type='radio'].visually-hidden
     content: '';
 
     background-color: #ee3643;
+}
+
+.index-columns
+{
+    position: relative;
 }
 
 .company-info-button,
@@ -2215,11 +2257,19 @@ input[type='radio'].visually-hidden
 
     align-items: center;
     justify-content: center;
+    position: absolute;
+    bottom: 86px;
+
 }
 
 .company-info-button
 {
     width: 220px;
+}
+
+.contacts-button
+{
+    width: 300px;
 }
 
 .footer
@@ -2244,8 +2294,6 @@ input[type='radio'].visually-hidden
     display: flex;
     flex-direction: column;
 }
-
-
 
 .footer-contacts
 {
