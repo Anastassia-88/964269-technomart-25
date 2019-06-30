@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="78" height="63" viewBox="0 0 78 63">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="78" height="63"
+     viewBox="0 0 78 63">
     <image width="78" height="63" overflow="visible" xlink:href="icon-5.png"/>
     <g fill="#FFF">
         <circle cx="25.983" cy="55.5" r="7.5"/>

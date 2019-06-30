@@ -6,8 +6,8 @@ var basketClose = basketPopup.querySelector(".modal-close");
 var continueShopping = basketPopup.querySelector(".basket-button-continue-shopping");
 
 
-basketLink.forEach (function (elem) {
-    elem.addEventListener("click", function(evt) {
+basketLink.forEach(function (elem) {
+    elem.addEventListener("click", function (evt) {
         evt.preventDefault();
         basketPopup.classList.add("modal-show-appear");
     });
@@ -33,17 +33,15 @@ continueShopping.addEventListener("click", function (evt) {
 });
 
 
-
 // Map
 var mapLink = document.querySelector(".modal-map-link");
 
-if (mapLink)
-{
+if (mapLink) {
     var mapPopup = document.querySelector(".modal-map");
 
     var mapClose = mapPopup.querySelector(".modal-close");
 
-    mapLink.addEventListener("click", function(evt) {
+    mapLink.addEventListener("click", function (evt) {
         evt.preventDefault();
         mapPopup.classList.add("modal-show");
     });
@@ -64,12 +62,10 @@ if (mapLink)
 }
 
 
-
 // Feedback
 var feedbackLink = document.querySelector(".modal-feedback-link");
 
-if (feedbackLink)
-{
+if (feedbackLink) {
     var feedbackPopup = document.querySelector(".modal-feedback");
     var feedbackClose = feedbackPopup.querySelector(".modal-close");
 
@@ -108,12 +104,9 @@ if (feedbackLink)
 
         if (!storageName && !storageEmail) {
             feedbackFormName.focus();
-        }
-
-        else if (storageName && !storageEmail) {
+        } else if (storageName && !storageEmail) {
             feedbackFormEmail.focus();
-        }
-        else if (storageName && storageEmail) {
+        } else if (storageName && storageEmail) {
             feedbackFormText.focus();
         }
     });
@@ -141,8 +134,7 @@ if (feedbackLink)
     window.addEventListener("keydown", function (evt) {
         if (evt.keyCode === 27) {
             evt.preventDefault();
-            if (feedbackPopup.classList.contains("modal-show"))
-            {
+            if (feedbackPopup.classList.contains("modal-show")) {
                 feedbackPopup.classList.remove("modal-show");
                 feedbackPopup.classList.remove("modal-show");
                 feedbackPopup.classList.remove("modal-error");
@@ -150,7 +142,6 @@ if (feedbackLink)
         }
     });
 }
-
 
 
 // Promo-slider
@@ -196,7 +187,6 @@ if (promoSlides.length) {
         }
     });
 }
-
 
 
 // Service-slider
