@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i%7CPT+Sans:400,400i,700,700i&display=swap&subset=cyrillic"
           rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="inner-page">
@@ -14,7 +14,7 @@
     <div class="header-top">
         <div class="container">
             <a class="logo" href="index.html"><img alt="logo" height="19" src="img/logo-header.svg"
-                                                                   width="109"></a>
+                                                   width="109"></a>
             <form action="https://echo.htmlacademy.ru" class="search-form" method="get">
                 <input id="search" name="search" placeholder="Поиск:" type="search">
                 <label for="search">
@@ -146,12 +146,14 @@
                         <legend class="filter-item-title">Питание:</legend>
                         <ul class="filter-options-list">
                             <li class="filter-option">
-                                <input class="visually-hidden filter-input filter-input-radio" id="battery" name="power-supply"
+                                <input class="visually-hidden filter-input filter-input-radio" id="battery"
+                                       name="power-supply"
                                        type="radio" value="battery">
                                 <label for="battery">Аккумуляторные</label>
                             </li>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-input filter-input-radio" id="network" name="power-supply"
+                                <input class="visually-hidden filter-input filter-input-radio" id="network"
+                                       name="power-supply"
                                        type="radio" value="network">
                                 <label for="network">Сетевые</label>
                             </li>
@@ -169,13 +171,15 @@
                         <li class="sorting-item"><a href="#">по типу</a></li>
                         <li class="sorting-item"><a href="#">по функционалу</a></li>
                     </ul>
-                    <a href="#">
+                    <a class="sorting-dir-link" href="#">
+                        Сортировка по возрастанию
                         <svg class="sorting-dir sorting-up-dir sorting-dir-current" height="10"
                              viewBox="0 0 11 10" width="11" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5.5 0L0 10h11z"/>
                         </svg>
                     </a>
-                    <a href="#">
+                    <a class="sorting-dir-link" href="#">
+                        Сортировка по по убыванию
                         <svg class="sorting-dir sorting-down-dir" height="10" viewBox="0 0 11 10"
                              width="11" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5.5 10L0 0h11"/>
@@ -522,6 +526,6 @@
     </div>
     <button class="modal-close" type="button"></button>
 </section>
-<script src="js/script.js"></script>
+<script src="js/script.min.js"></script>
 </body>
 </html>
